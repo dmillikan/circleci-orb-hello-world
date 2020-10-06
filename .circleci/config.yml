@@ -69,7 +69,7 @@ workflows:
             - orb-tools/publish-dev
           filters:
             branches:
-              only: master
+              only: main
       - orb-tools/dev-promote-prod-from-commit-subject:
           orb-name: dmillikan/hello-world-orb
           context: orb-publishing
@@ -80,4 +80,4 @@ workflows:
             - hold-for-prod-publish
           filters:
             branches:
-              only: master
+              only: main
